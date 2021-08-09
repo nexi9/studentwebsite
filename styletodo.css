@@ -1,0 +1,106 @@
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgb(158, 142, 233), white)
+    }
+    
+    .wrapper {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 40%;
+        background: rgb(247, 243, 243);
+        border-radius: 5px;
+        padding: 25px;
+    }
+    
+    .wrapper header {
+        font-size: 45px;
+        font-weight: 600;
+        padding-left: 160px;
+    }
+    
+    .wrapper .inputfield {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    
+    .inputfield input {
+        width: 85%;
+        height: 100%;
+        border: 1px solid white;
+        font-size: 20px;
+        border-radius: 3px;
+        padding-left: 15px;
+    }
+    
+    .inputfield button {
+        width: 60px;
+        height: 100%;
+        background: rgb(91, 43, 168);
+        color: white;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .wrapper .todoitems {
+        max-height: 250px;
+        overflow-y: auto;
+    }
+    
+    .todoitems li {
+        height: 45px;
+        position: relative;
+        line-height: 45px;
+        font-size: 20px;
+        background: rgb(224, 221, 221);
+        padding: 0 15px;
+        border-radius: 3px;
+        margin: 15px;
+        overflow: hidden;
+    }
+    
+    .todoitems li span {
+        position: absolute;
+        right: -45px;
+        color: white;
+        text-align: center;
+        background: rgb(41, 40, 40);
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .todoitems li:hover span {
+        right: 0px;
+    }
+    
+    .wrapper .footer {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    
+    .footer button {
+        width: 75px;
+        background: rgb(91, 43, 168);
+        color: white;
+        margin: 5px;
+        padding: 6px 10px;
+        font: 15px;
+        cursor: pointer;
+    }
